@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannes Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/30457136c1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav id="normal-nav">
+        <ul>
+            <li><a href="#first-page">Home</a></li>
+        </ul>
+        <ul>
+            <li><a href="#second-page">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="first-page">
+        <main>
+            <h2>Johannes Svensson</h2>
+            <h1>Software Engineer</h1>
+            <p>Welcome to my website! Here will I display some of the work I have done and my contact info. I’m
+                currently looking for an intership.</p>
+            <a href="#second-page" id="btn">
+                <div id="btn">
+                    <span>See More</span>
+                </div>
+            </a>
+        </main>
+        <aside id="top">
+
+        </aside>
+        <aside id="about">
+            <h3>About</h3>
+            <p>I’m currently studying Java Software Engineering at Nackademin, in Stockholm. Here I deepen my knowledge
+                mainly in building and maintaining programs with Java, and also learning Databases and Web development
+                with Javascript.
+                <br> <br>
+                Internship, will I too get to do under my years at Nackademin. Which is the reason I made this website,
+                so I can show You a bit more of me!</p>
+        </aside>
+    </div>
+    <div id="second-page">
+        <h3>My Work</h3>
+        <div class="project-box">
+            <video autoplay loop>
+                <source src="images/15game.mp4" type="video/mp4" />
+            </video>
+            <div class="hover-div">
+                <span>
+                    <h3>15 Game</h3>
+                    <p>Done with Java and JavaFx.</p>
+                </span>
+            </div>
+        </div>
+        <div class="project-box">
+            <img src="images/shoedbdiagram.JPG" alt="ER-diagram of database">
+            <div class="hover-div">
+                <span>
+                    <h3>A Shoe Webshop's Database</h3>
+                    <p>Done with JDBC, MySQL and MVC pattern.</p>
+                </span>
+            </div>
+        </div>
+        <div class="project-box">
+            <video autoplay loop>
+                <source src="images/Nackademibankenvideo.mp4" type="video/mp4" />
+            </video>
+            <div class="hover-div">
+                <span>
+                    <h3>Admin and Customer Bank App</h3>
+                    <p>Done with classmates using JDBC, MySQL, Swing and MVC pattern.</p>
+                </span>
+            </div>
+        </div>
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>
+                E-Mail: <a href="mailto:johannes.svensson97@gmail.com" target="_blank">johannes.svensson97@gmail.com</a>
+                <br>
+                My resume: <a href="Resume/Johannes Svensson resume.pdf" target="_blank">“get pdf here”</a>
+            </p>
+            <a href="https://github.com/JontesGitHub" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/johannes-svensson-a56585145" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </section>
+        <img src="images/profile-img.jpg" id="profile-img" alt="Picture of me">
+    </div>
+    <footer>
+        <div class="container-footer">
+            <p>This is a Responsive, Mobile First website, purely made with HTML, CSS and Javascript. 
+                 I'm using GitHub pages to help host this website for me. 
+                  You can find the code on my GitHub repositories.</p>
+        </div>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+
+</html>
