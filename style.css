@@ -5,6 +5,7 @@
     --sec-light: #FA8181;
     --font: 'Roboto', sans-serif;
     --header-font: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
 }
 /* Reset styling */
 body,p,a,ul,li {
