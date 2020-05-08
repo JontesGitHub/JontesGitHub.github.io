@@ -13,20 +13,20 @@
 <body>
     <nav id="normal-nav">
         <ul>
-            <li><a href="#first-page">Home</a></li>
+            <li><a href="#home-page">Home</a></li>
         </ul>
         <ul>
-            <li><a href="#second-page">My Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#work-page">My Work</a></li>
+            <li><a href="#contact-page">Contact</a></li>
         </ul>
     </nav>
-    <div id="first-page">
+    <div id="home-page">
         <main>
             <h2>Johannes Svensson</h2>
             <h1>Software Engineer</h1>
             <p>Welcome to my website! Here will I display some of the work I have done and my contact info. I’m
                 currently looking for an intership.</p>
-            <a href="#second-page" id="btn">
+            <a href="#work-page" id="btn">
                 <div id="btn">
                     <span>See More</span>
                 </div>
@@ -45,7 +45,7 @@
                 so I can show You a bit more of me!</p>
         </aside>
     </div>
-    <div id="second-page">
+    <section id="work-page">
         <h3>My Work</h3>
         <div class="project-box">
             <video autoplay loop muted>
@@ -62,8 +62,19 @@
             <img src="images/shoedbdiagram.JPG" alt="ER-diagram of database">
             <div class="hover-div">
                 <span>
-                    <h3>A Shoe Webshop's Database</h3>
+                    <h3>A Shoe Webshop Application</h3>
                     <p>Done with JDBC, MySQL and MVC pattern.</p>
+                </span>
+            </div>
+        </div>
+        <div class="project-box">
+            <video autoplay loop muted>
+                <source src="images/webchili video.mp4" type="video/mp4" />
+            </video>
+            <div class="hover-div">
+                <span>
+                    <h3>A Webshop selling chilis</h3>
+                    <p>Done with JEE, JSF (+ Primefaces), Wildfly, MySQL and working SCRUM with classmates.</p>
                 </span>
             </div>
         </div>
@@ -78,7 +89,9 @@
                 </span>
             </div>
         </div>
-        <section id="contact">
+    </section>
+    <section id="contact-page">
+        <div id="contact-info">
             <h3>Contact</h3>
             <p>
                 E-Mail: <a href="mailto:johannes.svensson97@gmail.com" target="_blank">johannes.svensson97@gmail.com</a>
@@ -91,9 +104,10 @@
             <a href="https://www.linkedin.com/in/johannes-svensson-a56585145" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-        </section>
-        <img src="images/profile-img.jpg" id="profile-img" alt="Picture of me">
-    </div>
+        </div>
+        <img src="images/profile-img.jpg" id="profile-img" alt="Picture of me"> 
+    </section>
+    
     <footer>
         <div class="container-footer">
             <p>This is a Responsive, Mobile First website, purely made with HTML, CSS and Javascript. 

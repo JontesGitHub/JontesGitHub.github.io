@@ -69,7 +69,7 @@ p {
     background-color: var(--sec-light);
     padding: 0.4em 1em 1em 1em;
 }
-#second-page {
+#work-page, #contact-page {
     padding: 0 1em 1em 1em;
 }
 .project-box {
@@ -100,14 +100,13 @@ p {
     padding: 0 0 1em 1em;
 }
 
-
 #profile-img {
     height: 10em;
     width: 10em;
     border-radius: 50%;
     border: 4px solid var(--sec-dark);
 }
-#contact p {
+#contact-info p {
     line-height: 2em;
 }
 footer {
@@ -129,7 +128,7 @@ footer p {
 }
 
 /* Mobile Style */
-#first-page {
+#home-page {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -144,19 +143,19 @@ aside#top {
     display: none;
 }
 
-#second-page {
+#work-page, #contact-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(3, 1fr);
+}
+#work-page {
+    grid-template-rows: auto 1fr;
 }
 .hover-div {
     opacity: 0.8;
 }
 
-
 #profile-img {
     justify-self: center;
-    grid-row: 5/6;
     margin-top: 3em;
 }
 i {
@@ -171,26 +170,27 @@ i {
     main {
         padding-left: 2em;
     }
-    #second-page {
+    #work-page, #contact-page {
         grid-template-columns: 1fr 1fr;
         column-gap: 0.5em;
+    } 
+    #work-page {
+        padding: 5em 1.5em 0em 1.5em;
     }
-    #second-page h3 {
+    #contact-page {
+        padding: 5em 1.5em 2em 1.5em;
+    }
+    #work-page h3 {
         grid-column: span 2;
     }
-    #contact {
-        grid-row: 4/5;
-    }
     #profile-img {
-        grid-row: 4/5;
-        grid-column: 2/3;
         margin-top: 1em;
     }
 }
 
 /* Tablets style */
 @media screen and (min-width: 760px){
-    #first-page {
+    #home-page {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -238,7 +238,7 @@ i {
         font-size: 18px;
     }
 
-    #first-page {
+    #home-page {
         grid-template-rows: 50vh 50vh;
     }
     main {
@@ -249,25 +249,28 @@ i {
         margin-right: 2em;
     }
 
-    #second-page {
-        max-width: 1440px;
+    #work-page {
+        max-width: 1400px;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 1fr 1fr;
     }
-    #second-page h3 {
+    #work-page h3 {
         grid-column: span 3;
     }
-    #contact {
-        grid-row: 3/4;
+    #contact-page {
+        max-width: 1350px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    #contact-info {
         grid-column: span 2;
     }
     #profile-img {
-        grid-row: 3/4;
-        grid-column: 3/4;
         margin-top: 1em;
     }
-
 
     .hover-div {
         height: 100%;
@@ -278,8 +281,7 @@ i {
     }
     i {
         margin-top: 1rem;
-        margin-right: 2rem;
-        
+        margin-right: 2rem;   
     }
 
     i:hover {
@@ -294,6 +296,13 @@ i {
     h2 {
         font-size: 2em;
         margin-bottom: 0em;
+    }
+    #work-page  {
+       padding: 6em 1em 0em 1em;
+    }
+    #contact-page {
+       padding: 10em 3em 4em 3em;
+        
     }
 }
 @media screen and (min-width: 1400px){
