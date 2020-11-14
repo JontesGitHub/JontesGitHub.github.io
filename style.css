@@ -31,7 +31,7 @@ h1, h2 {
     font-family: var(--header-font);
 }
 #btn {
-    width: 10em;
+    width: 13em;
     height: 3em;
     background-color: var(--sec-dark);
     color: #ffffff;
